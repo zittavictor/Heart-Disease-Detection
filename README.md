@@ -1,4 +1,4 @@
-# Heart Disease Detection Using Decision Tree#
+# Heart Disease Detection Using Decision Tree
 
 This repository contains a Jupyter Notebook for a heart disease detection system using the Decision Tree machine learning algorithm. The project is designed to assist medical professionals by predicting the likelihood of heart disease based on patient data.
 
