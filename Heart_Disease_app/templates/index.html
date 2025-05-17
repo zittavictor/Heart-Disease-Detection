@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Heart Disease Prediction</h1>
+        <form action="/predict" method="POST">
+            {% for field in ['age','sex','cp','trestbps','chol','fbs','restecg','thalach','exang','oldpeak','slope','ca','thal'] %}
+                <input type="number" name="{{ field }}" placeholder="{{ field | capitalize }}" step="any" required><br>
+            {% endfor %}
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
